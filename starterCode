@@ -1,4 +1,4 @@
-//Example of int and string Arrays with random selection	RReed 1/5/15
+//Example of int and string Arrays with random selection	Angel Castaneda 1/5/15
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
