@@ -1,0 +1,35 @@
+//Example of int and string Arrays with random selection	RReed 1/5/15
+#include <cstdlib>
+#include <ctime>
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main ()
+{	
+  system("cls"); //clear screen
+  //declare and initialize integer and string arrays with values
+	int gold[10] = {33, 44, 9, 0, 6, 1, 2, 3, 4, 5}; //
+	string name[10] = {"Eenie", "Meenie", "Miney", "Moe", "Bilbo", "Tom", "Sam", "Bam", "Gollum", "Gandalf"};
+	int counter = 0;
+	//display list of names and their respective gold
+	cout << "\nName-Gold\n\n";
+	for (counter=0; counter<10; counter++)
+		{   cout<<name[counter]<<"-";
+			cout <<gold[counter]<<" ";
+	cout<< "\n\n";
+	}
+	//random number generator
+	unsigned seed, randomNum;
+	int pick;
+	seed = ((unsigned int) time (0));
+	srand(seed);
+		randomNum = rand() % 9;
+		pick =(int)randomNum;
+		//Display Random Person and their respective gold
+		cout <<"The Random Character is " << name[pick]<<" \n";
+		cout<<"The amount of gold possessed by " << name[pick]<<" is "<<gold[pick] <<" units! \n";
+
+	return 0;
+}
+
